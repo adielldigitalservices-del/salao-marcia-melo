@@ -1,0 +1,2 @@
+const m=document.querySelector('.menu'),n=document.getElementById('nav');m&&m.addEventListener('click',()=>{const o=n.classList.toggle('open');m.setAttribute('aria-expanded',o)});
+const abas=[...document.querySelectorAll('[role=tab]')];abas.forEach(a=>a.addEventListener('click',()=>{abas.forEach(b=>{const s=b===a;b.setAttribute('aria-selected',s);document.getElementById(b.getAttribute('aria-controls')).hidden=!s})}));
